@@ -51,7 +51,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="JsonParserCLI">
+    <Reference Include="JsonParserCLI, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>.\JsonParserCLI.dll</HintPath>
     </Reference>
     <Reference Include="MapleLib">

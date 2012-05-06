@@ -133,7 +133,8 @@ namespace WzJSONizer
 					Dirs.Push(new DirObject(Dirs.Peek().Dir.Current.WzDirectories.GetEnumerator(),Temp8));
 				}
 			}
-			System.IO.File.WriteAllText(OutputFileName,Creator.Create(RootHash),Encoding.UTF8);
+			var Json=Creator.Create(RootHash);
+			System.IO.File.WriteAllText(OutputFileName,Json,Encoding.UTF8);
 			return;
 		}
 
@@ -152,7 +153,7 @@ namespace WzJSONizer
 				Console.WriteLine("指定されたファイルはwzファイルではありません。");
 				return;
 			}
-			ParseFile(FileName,"jsonresult.txt");
+			ParseFile(FileName,"jsonresult2.txt");
 		}
 	}
 }
